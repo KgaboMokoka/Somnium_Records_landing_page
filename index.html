@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Somnium Records</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Optional: Tailwind theme tweaks -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            gold: '#f0b428',
+            dark: '#0B0F1A',
+            muted: '#9CA3AF'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="min-h-screen bg-gradient-to-br from-black via-[#0B0F1A] to-black text-white">
+
+  <!-- ================= HERO ================= -->
+  <section class="flex flex-col items-center justify-center text-center px-6 py-24">
+
+    <!-- Icon -->
+    <div id="album-image" class="mb-10">
+      <div class="w-20 h-20 rounded-full border border-gold flex items-center justify-center">
+        <img src="./assets/images/vynil.png" alt="Album Image">
+      </div>
+    </div>
+
+    <!-- Title -->
+    <h1 class="text-5xl md:text-6xl font-bold tracking-tight">
+      <span class="text-gold">Somnium</span>
+      <span class="text-white"> Records</span>
+    </h1>
+
+    <!-- Subtitle -->
+    <p class="mt-4 text-lg text-muted">
+      Where Dreams Become Sound
+    </p>
+
+    <!-- Badge -->
+    <div class="mt-8 flex items-center gap-2 px-5 py-2 rounded-full border border-gold/30 bg-gold/10 text-sm text-gold">
+      <span class="w-2 h-2 rounded-full bg-gold"></span>
+      FULL SITE COMING SOON
+    </div>
+
+    <!-- Description -->
+    <p class="mt-8 max-w-xl text-muted">
+      Be the first to know when we launch. Get exclusive drops, new music,
+      and merch announcements.
+    </p>
+
+    <!-- CTA -->
+    <div class="mt-10 flex flex-col sm:flex-row gap-4">
+      <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+        <span class="text-muted">✉</span>
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="bg-transparent outline-none text-sm text-white placeholder-muted"
+        />
+      </div>
+      <button class="px-8 py-3 rounded-xl bg-gold text-black font-semibold hover:bg-gold/90 transition">
+        Subscribe
+      </button>
+    </div>
+  </section>
+
+  <!-- ================= WHAT'S COMING ================= -->
+  <section class="px-6 py-24 text-center">
+
+    <h2 class="text-3xl md:text-4xl font-semibold mb-4">
+      What's Coming
+    </h2>
+
+    <p class="text-muted max-w-xl mx-auto mb-16">
+      We're building something special. Here's a taste of what to expect
+      when we go live.
+    </p>
+
+    <!-- Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+      <!-- Card 1 -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-left">
+        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-6">
+          <span class="text-gold text-xl">👜</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Exclusive Merch</h3>
+        <p class="text-muted text-sm">
+          Limited edition hoodies, sweatpants, and styrofoam cups.
+          Rep the label in style.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-left">
+        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-6">
+          <span class="text-gold text-xl">👥</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Meet Our Artists</h3>
+        <p class="text-muted text-sm">
+          Get to know the talented artists under our label.
+          Bios, socials, and their latest work.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="rounded-2xl border border-white/10 bg-white/5 p-8 text-left">
+        <div class="w-12 h-12 rounded-lg bg-gold/10 flex items-center justify-center mb-6">
+          <span class="text-gold text-xl">🎵</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-3">Fresh Releases</h3>
+        <p class="text-muted text-sm">
+          Stay updated on the latest tracks, albums, and
+          collaborations from our roster.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="px-6 py-16 text-center border-t border-white/10">
+
+    <!-- Socials -->
+    <div class="flex justify-center gap-4 mb-6">
+      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">IG</div>
+      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">X</div>
+      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">YT</div>
+      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">WA</div>
+      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">FB</div>
+    </div>
+
+    <p class="text-sm text-muted">
+      © 2023 Somnium Records. All rights reserved.
+    </p>
+    <p class="text-xs text-muted mt-1">
+      Dreams made audible.
+    </p>
+
+  </footer>
+
+</body>
+</html>
