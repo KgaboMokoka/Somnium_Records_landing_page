@@ -7,7 +7,6 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 
-  <!-- Optional: Tailwind theme tweaks -->
   <script>
     tailwind.config = {
       theme: {
@@ -59,19 +58,26 @@
     </p>
 
     <!-- CTA -->
-    <div class="mt-10 flex flex-col sm:flex-row gap-4">
-      <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
-        <span class="text-muted">✉</span>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          class="bg-transparent outline-none text-sm text-white placeholder-muted"
-        />
-      </div>
-      <button class="px-8 py-3 rounded-xl bg-gold text-black font-semibold hover:bg-gold/90 transition">
-        Subscribe
-      </button>
+    <!-- CTA -->
+<div class="mt-10">
+  <form id="subscribe-form" class="flex flex-col sm:flex-row gap-4">
+    <div class="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-3">
+      <span class="text-muted">✉️</span>
+      <input
+        type="email"
+        id="email-input"
+        name="email"
+        placeholder="Enter your email"
+        required
+        class="bg-transparent outline-none text-sm text-white placeholder-muted w-64"
+      />
     </div>
+    <button type="submit" class="px-8 py-3 rounded-xl bg-gold text-black font-semibold hover:bg-gold/90 transition disabled:opacity-50">
+      Subscribe
+    </button>
+  </form>
+  <p id="form-message" class="mt-4 text-sm"></p>
+</div>
   </section>
 
   <!-- ================= WHAT'S COMING ================= -->
@@ -133,11 +139,11 @@
 
     <!-- Socials -->
     <div class="flex justify-center gap-4 mb-6">
-      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">IG</div>
-      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">X</div>
-      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">YT</div>
-      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">WA</div>
-      <div class="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center">FB</div>
+      <a href="https://www.instagram.com/somnium_recordss/" target="_blank"><div class="w-10 h-10  flex items-center justify-center"><img src="./assets/images/insta.png" alt="Instagram Logo"></div></a>
+      <a href="https://x.com/somnium_records" target="_blank"><div class="w-10 h-10  flex items-center justify-center"><img src="./assets/images/twitter_bird.png" alt="Twitter Logo"></div></a>
+      <!-- <a href="" target="_blank"><div class="w-10 h-10  flex items-center justify-center"><img src="./assets/images/face.png" alt="Facebook Logo"></div></a> -->
+      <a href="" target="_blank"><div class="w-10 h-10  flex items-center justify-center"><img src="./assets/images/youtube.png" alt="YouTube Logo"></div></a>
+      <a href="https://soundcloud.com/user-597011896-883187690" target="_blank"><div class="w-10 h-10  flex items-center justify-center"><img src="./assets/images/soundcloud.png" alt="Soundcloud Logo"></div></a>
     </div>
 
     <p class="text-sm text-muted">
@@ -148,6 +154,8 @@
     </p>
 
   </footer>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
